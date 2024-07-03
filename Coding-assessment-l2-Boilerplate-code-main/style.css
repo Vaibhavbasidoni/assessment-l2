@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 22%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.vendor {
+    color: #999;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+#current-price {
+    color: #000;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#compare-price {
+    color: #999;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+#percentage-off {
+    color: #f00;
+    font-size: 16px;
+}
+
+.color-selector, .size-selector, .quantity-selector {
+    margin: 10px 0;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-box.white {
+    background: #eb0808;
+}
+
+.color-box.green {
+    background: #00ff00;
+}
+
+.color-box.blue {
+    background: #0000ff;
+}
+
+.color-box.pink {
+    background: #ff00ff;
+}
+
+.color-box.selected {
+    border-color: #000;
+}
+
+.add-to-cart {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.cart-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: 600;
+}

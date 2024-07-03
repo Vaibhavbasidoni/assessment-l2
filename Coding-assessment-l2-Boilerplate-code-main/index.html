@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="main-image" src="p.jpg" alt="Product Image">
+            <div class="thumbnails">
+                <img src="t1.jpg" alt="Thumbnail 1" onclick="changeImage(this.src)">
+                <img src="t2.jpg" alt="Thumbnail 2" onclick="changeImage(this.src)">
+                <img src="t3.jpg" alt="Thumbnail 3" onclick="changeImage(this.src)">
+                <img src="t4.jpg" alt="Thumbnail 4" onclick="changeImage(this.src)">
+            </div>
+        </div>
+        <div class="product-details">
+            <h2 class="vendor">Marmeto</h2>
+            <h1 class="title">Embrace Sideboard</h1>
+            <div class="price">
+                <span id="current-price">$12999.00</span>
+                <span id="compare-price">$19999.00</span>
+                <span id="percentage-off">35% Off</span>
+            </div>
+            <div class="color-selector">
+                <label>Choose a Color:</label>
+                <div class="color-options">
+                    <div class="color-box white" onclick="selectColor('White')" data-color="White"></div>
+                    <div class="color-box green" onclick="selectColor('Green')" data-color="Green"></div>
+                    <div class="color-box blue" onclick="selectColor('Blue')" data-color="Blue"></div>
+                    <div class="color-box pink" onclick="selectColor('Pink')" data-color="Pink"></div>
+                </div>
+            </div>
+            <div class="size-selector">
+                <label>Choose a Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">Extra Large</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div class="quantity-selector">
+                <label>Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            <div class="description">
+                <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+            </div>
+            <div id="cart-message" class="cart-message"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
